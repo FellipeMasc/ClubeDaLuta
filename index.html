@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ITA Fight Club Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ITA Fight Club</h1>
+      <p>
+        Entre na batalha de inteligências e estratégias no clube da luta mais
+        exclusivo do ITA. Escolha seu lutador e prepare-se para o desafio!
+      </p>
+    </header>
+    <main>
+      <button id="download-button" onclick="startDownload()">
+        Baixar o Jogo
+      </button>
+    </main>
+    <footer>
+      <p>Conheça os personagens: Coquinha, Calabresa, Rinha e Farol.</p>
+      <div class="character-gallery">
+        <img src="coquinha.jpg" alt="Coquinha" title="Coquinha" />
+        <img src="calabresa.jpg" alt="Calabresa" title="Calabresa" />
+        <img src="rinha.jpg" alt="Rinha" title="Rinha" />
+        <img src="farol.jpg" alt="Farol" title="Farol" />
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  function startDownload() {
+    var a = document.createElement("a");
+    a.href = "quertomarbomba.mp3"; // Substitua pelo nome do arquivo real
+    a.download = "quertomarbomba.mp3"; // O atributo 'download' sugere o nome do arquivo para salvar
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+</script>

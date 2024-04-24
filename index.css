@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+	background-image: url('luva.png');
+	background-color: #0099DB;
+	font-family: 'Press Start 2P', cursive;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+header {
+	text-align: center;
+	margin-top: 50px;
+}
+
+h1 {
+	color: #ecd81c;
+	margin-bottom: 10px;
+}
+
+header p {
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 15px;
+	max-width: 600px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+main {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#download-button {
+	background-color: #FF4747;
+	color: #FFFFFF;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-top: 20px;
+}
+
+#download-button:hover {
+	background-color: #C31F1F;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+	background-color: #0099DB;
+	/* Azul */
+	font-family: 'Press Start 2P', cursive;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+body::after {
+	content: "\2694 \1F94B \1F94A";
+	color: rgba(255, 255, 255, 0.1);
+	font-size: 10vw;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0.2;
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer {
+	width: 100%;
+	padding: 20px;
+	background-color: #101010;
+	color: #ffffff;
+	text-align: center;
+}
+
+.character-gallery {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	padding: 20px 0;
+}
+
+.character-gallery img {
+	width: 100px;
+	height: auto;
+	border: 3px solid #ffffff;
+	border-radius: 5px;
+}
